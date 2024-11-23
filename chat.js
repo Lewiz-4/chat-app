@@ -9,7 +9,10 @@ function sendMessage() {
     const messagesContainer = document.getElementById('messages');
     messagesContainer.appendChild(messageElement);
 
+    // Cuộn xuống để hiển thị tin nhắn mới
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+    // Xóa nội dung input sau khi gửi
     messageInput.value = "";
   }
 }
